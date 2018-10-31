@@ -19,6 +19,7 @@ import java.net.MalformedURLException;
 public class BaseTest {
     public WebDriver driver;
     public WebDriverWait wait;
+    public static final String testDataExcelFileName = "testdata.xlsx";
 
     @BeforeClass(alwaysRun = true)
     @Parameters({"os", "browser", "url", "node"})

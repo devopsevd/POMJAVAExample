@@ -1,5 +1,8 @@
 package pages;
 
+import io.qameta.allure.Step;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -21,11 +24,20 @@ public class LoginPage extends BasePage{
 
     //*********Page Methods*********
 
-    public void loginToN11 (String username, String password){
+    // public void loginToN11 (String username, String password){
+    //     //Enter Username(Email)
+    //     writeText(By.id(usenameId),username);
+    //     //Enter Password
+    //     writeText(By.id(passwordId), password);
+    //     //Click Login Button
+    //     click(By.id(loginButtonId));
+    // }
+
+    public void loginToN11 (XSSFRow row){
         //Enter Username(Email)
-        writeText(By.id(usenameId),username);
+        writeText(By.id(usenameId),row.getCell(1).toString());
         //Enter Password
-        writeText(By.id(passwordId), password);
+        writeText(By.id(passwordId), row.getCell(2).toString());
         //Click Login Button
         click(By.id(loginButtonId));
     }
