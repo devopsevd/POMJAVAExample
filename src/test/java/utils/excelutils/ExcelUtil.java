@@ -62,7 +62,7 @@ public class ExcelUtil {
     // It creates FileInputStream and set excel file and excel sheet to excelWBook and excelWSheet variables.
     public static void setExcelFileSheet(String sheetName) throws Exception{
         //MAC or Windows Selection for excel path
-        if (Platform.getCurrent().toString().equalsIgnoreCase("MAC")) {
+        if (Platform.getCurrent().toString().equalsIgnoreCase("LINUX")) {
             testDataExcelPath = currentDir + "//src//test//java//resources//";
         } else if (Platform.getCurrent().toString().contains("WIN")) {
             testDataExcelPath = currentDir + "\\src\\test\\java\\resources\\";
