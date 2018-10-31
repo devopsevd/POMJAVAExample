@@ -19,7 +19,7 @@ public class LoginTests extends BaseTest {
 
 
     @BeforeTest
-    public void setupTestData () {
+    public void setupTestData () throws Exception{
         //Set Test Data Excel and Sheet
         System.out.println("************Setup Test Level Data**********");
         ExcelUtil.setExcelFileSheet("LoginData");
@@ -27,7 +27,7 @@ public class LoginTests extends BaseTest {
 
 
     @Test (priority = 0)
-    public void invalidLoginTest_InvalidUserNameInvalidPassword () throws InterruptedException {
+    public void invalidLoginTest_InvalidUserNameInvalidPassword () throws Exception {
 
         //*************PAGE INSTANTIATIONS*************
         HomePage homePage = new HomePage(driver,wait);
@@ -54,7 +54,7 @@ public class LoginTests extends BaseTest {
     }
 
     @Test (priority = 1)
-    public void invalidLoginTest_EmptyUserEmptyPassword () throws InterruptedException {
+    public void invalidLoginTest_EmptyUserEmptyPassword () throws Exception {
         //*************PAGE INSTANTIATIONS*************
         HomePage homePage = new HomePage(driver,wait);
         LoginPage loginPage = new LoginPage(driver,wait);
