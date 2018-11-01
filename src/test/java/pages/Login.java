@@ -26,7 +26,7 @@ public class Login extends BasePage
 	String loginButtonId = "loginButton";
 	
 	//*********Page Variables*********
-	String baseURL = "https://www.n11.com/";
+	String baseURL = "https://demo.openmrs.org/openmrs/login.htm";
 
 	@Given("^Open Application and Enter url$")
 	public void open_Application_and_Enter_url() throws Throwable {
