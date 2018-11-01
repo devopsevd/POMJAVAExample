@@ -34,7 +34,7 @@ public class OpenMRSTests extends BaseTest
 	}
 
 	@Test(description="login",dataProvider="features")
-	public void login(CucumberFeatureWrapper cFeature)
+	public void login2(CucumberFeatureWrapper cFeature)
 	{
 		testRunner.runCucumber(cFeature.getCucumberFeature());
 	}
