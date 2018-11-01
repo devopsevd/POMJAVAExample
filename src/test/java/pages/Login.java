@@ -15,7 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Login extends BasePage
 {
     //*********Constructor*********
-	public Login (WebDriver driver, WebDriverWait wait) {
+	public Login(WebDriver driver, WebDriverWait wait) {
         super(driver, wait);
 	}
 
