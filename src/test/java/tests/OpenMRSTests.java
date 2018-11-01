@@ -11,7 +11,7 @@ import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 
 @CucumberOptions(
-		features="src/test/resources/features",
+		features="src/test/java/resources/features",
 		glue={"pages"},
 		format=
 				{"pretty",
