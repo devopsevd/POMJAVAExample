@@ -30,7 +30,7 @@ public class Login extends BasePage
 
 	@Given("^Open Application and Enter url$")
 	public void open_Application_and_Enter_url() throws Throwable {
-	  driver.get(baseURL);
+	//   driver.get(baseURL);
 	  //OpenMRSTests.driver.get("https://demo.openmrs.org/openmrs/login.htm");
 	  
 	}
