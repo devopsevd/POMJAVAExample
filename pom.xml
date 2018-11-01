@@ -61,6 +61,11 @@
 			<version>1.0.5</version>
 			<scope>provided</scope>
 		</dependency>
+        <dependency>
+<groupId>info.cukes</groupId>
+<artifactId>cucumber-picocontainer</artifactId>
+<version>1.0.14</version>
+</dependency>
 
     </dependencies>
 
